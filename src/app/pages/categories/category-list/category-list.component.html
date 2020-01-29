@@ -1,7 +1,7 @@
 <nav class="mb-5">
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
-      <a routerlink="/">Home</a>
+      <a routerLink="/">Home</a>
     </li>
     <li class="breadcrumb-item active">
       Categorias
@@ -16,7 +16,7 @@
     </h1>
   </div>
   <div class="col-md">
-    <a href="" routerlink="new" class="btn btn-success float-right">
+    <a href="" routerLink="new" class="btn btn-success float-right">
       + Nova Categoria</a>
   </div>
 </div>
@@ -34,7 +34,7 @@
         <strong>{{ category.name }}</strong><br>
         <small>{{ category.description }}</small>
       </td>
-      <td >
+      <td>
         <a [routerLink]="[category.id, 'edit']" class="btn btn-outline-info btn-sm mr-2">
           Editar</a>
         <button (click)="deleteCategory(category)" class="btn btn-outline-danger btn-sm">
